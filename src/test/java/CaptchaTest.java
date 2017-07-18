@@ -12,8 +12,6 @@ public class CaptchaTest {
 
     @Test
     public void firstPatternLeftOperandShouldBeOne() {
-
-
         Captcha captcha = new Captcha(Captcha.STRING_FIRST_PATTERN, 1, dummy_operator, dummy_right);
         String expected = "One";
         Assert.assertEquals(expected, captcha.getLeft());
